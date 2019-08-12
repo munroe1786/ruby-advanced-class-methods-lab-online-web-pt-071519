@@ -41,7 +41,7 @@ class Song
   def self.new_from_filename(filename)
     split = filename.split(' - ')
     artist_name = split[0]
-    new_song = split[1]
+    new_song = split('.')
     binding.pry
 
   end
