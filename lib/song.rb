@@ -52,6 +52,7 @@ class Song
     split = filename.split(' - ')
     name = split[1].split('.')[0]
     artist_name = split[0]
+    
     binding pry
   end
   
