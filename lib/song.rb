@@ -46,9 +46,7 @@ class Song
     song.name = name
     song.artist_name = artist_name
     song
-    binding.pry
-
-  end
+end
   
   def self.alphabetical
     self.all.sort { |a, b| a.name <=> b.name}
