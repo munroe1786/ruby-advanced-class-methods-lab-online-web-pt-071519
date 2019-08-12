@@ -43,6 +43,7 @@ class Song
     artist_name = split[0]
     name = split[1].split('.')[0]
     song = song.new
+    song.name = name
     
     binding.pry
 
