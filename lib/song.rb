@@ -46,7 +46,12 @@ class Song
     song.name = name
     song.artist_name = artist_name
     song
-end
+  end
+
+  def self.create_from_filename(filename)
+    split = filename.split(' - ')
+    binding pry
+  end
   
   def self.alphabetical
     self.all.sort { |a, b| a.name <=> b.name}
